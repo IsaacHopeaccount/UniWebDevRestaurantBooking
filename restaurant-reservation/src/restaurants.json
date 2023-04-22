@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Example Italian",
+    "description": "An italian restaurant with a great view of the city",
+    "rating": 5,
+    "address": "Bond Street, Liverpool",
+    "phone": "0151 456 7890",
+    "image": "https://images.unsplash.com/photo-1532117472055-4d0734b51f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbGlhbiUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "menu": [
+      { "id": 1, "name": "Pizza Margherita", "price": 12 },
+      { "id": 2, "name": "Spaghetti Carbonara", "price": 14 },
+      { "id": 3, "name": "Lasagne", "price": 15 },
+      { "id": 4, "name": "Tiramisu", "price": 8 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Example Chinese",
+    "description": "A traditional Chinese restaurant for the whole family to enjoy",
+    "rating": 4.5,
+    "address": "Bond Street, Liverpool",
+    "phone": "0151 123 4567",
+    "image": "https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1179&q=80",
+    "menu": [
+      { "id": 1, "name": "Spring Rolls", "price": 4 },
+      { "id": 2, "name": "Peking Duck", "price": 20 },
+      { "id": 3, "name": "Fried Rice", "price": 8 },
+      { "id": 4, "name": "Sweet and Sour Pork", "price": 12 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Example American Diner",
+    "description": "A classic American diner with a twist",
+    "rating": 3.7,
+    "address": "Bond Street, Liverpool",
+    "phone": "0151 098 7654",
+    "image": "https://images.unsplash.com/photo-1501688190156-9e816757373a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFtZXJpY2FuJTIwZGluZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "menu": [
+      { "id": 1, "name": "Burger", "price": 8 },
+      { "id": 2, "name": "Fries", "price": 4 },
+      { "id": 3, "name": "Shake", "price": 6 },
+      { "id": 4, "name": "Hot Dog", "price": 5 }
+    ]
+  }
+]

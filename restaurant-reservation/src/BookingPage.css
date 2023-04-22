@@ -1,0 +1,18 @@
+.booking-page {
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1634234498573-29224acf2907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  
+  .booking-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
