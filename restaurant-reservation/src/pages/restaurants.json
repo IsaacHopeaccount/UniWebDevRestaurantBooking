@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Example Italian",
+    "name": "Bella Italia",
     "description": "An italian restaurant with a great view of the city",
     "address": "Bond Street, Liverpool",
     "phone": "0151 456 7890",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Example Chinese",
+    "name": "Dragon Palace China",
     "description": "A traditional Chinese restaurant for the whole family to enjoy",
     "address": "Bond Street, Liverpool",
     "phone": "0151 123 4567",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Example American Diner",
+    "name": "Stars and Stripes Diner",
     "description": "A classic American diner with a twist",
     "address": "Bond Street, Liverpool",
     "phone": "0151 098 7654",
@@ -27,3 +27,4 @@
     "image": "https://images.unsplash.com/photo-1501688190156-9e816757373a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFtZXJpY2FuJTIwZGluZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
   }
 ]
+

@@ -3,6 +3,7 @@ import { Container, Typography, Box, TextField, Button, Dialog, DialogContent } 
 import { useNavigate } from 'react-router-dom';
 
 function SimpleChatbot() {
+  // States for input, chatbot dialog open status, and messages
   const [input, setInput] = useState('');
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
@@ -11,27 +12,31 @@ function SimpleChatbot() {
       sender: 'chatbot',
     },
   ]);
+
+  // Use the navigate function from react-router-dom for navigation
   const navigate = useNavigate();
 
+  // Functions to handle dialog opening and closing
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
 
+  // Function to add a chatbot response to the messages state
   const addChatbotResponse = (responseText) => {
     setMessages([...messages, { text: responseText, sender: 'chatbot' }]);
   };
 
+  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
 
     // Add user message to messages array
     setMessages([...messages, { text: input, sender: 'user' }]);
-    console.log('Updated messages:', [...messages, { text: input, sender: 'user' }]);
 
+    // Depending on user input, respond differently and potentially navigate to a different page
     if (
         input.toLowerCase().includes('how') ||
         input.toLowerCase().includes('purpose') ||
@@ -73,9 +78,12 @@ function SimpleChatbot() {
       addChatbotResponse('Sorry, I could not understand your request. I am fairly simple so you will have to be more specific.');
     }
 
+
+    // After handling input, clear the input field
     setInput('');
   };
 
+    // Function to render all messages in the chat
   const renderMessages = () => {
     console.log('Rendering messages')
     return messages.map((message, index) => (
@@ -102,6 +110,8 @@ function SimpleChatbot() {
     ));
   };
 
+  
+  // Render the chat interface
   return (
     <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>

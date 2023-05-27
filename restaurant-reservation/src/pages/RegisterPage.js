@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Box, Typography } from '@mui/material';
 import RegistrationForm from '../RegistrationForm';
 
+/* Register page */
 function RegisterPage() {
   return (
     <Container maxWidth="sm">

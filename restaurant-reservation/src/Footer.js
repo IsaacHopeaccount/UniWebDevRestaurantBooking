@@ -19,8 +19,8 @@ function Footer({ isLoggedIn }) {
     >
       <Typography variant="body1">
         Follow us on{' '}
-        <Link href="https://www.facebook.com" target="_blank" rel="noopener" color="inherit">
-          Facebook
+        <Link href="https://www.facebook.com" target="_blank" rel="noopener" color="inherit"> {/* Add links to social media, these just go to the homepages of the social media sites for show
+          Facebook */}
         </Link>
         ,{' '}
         <Link href="https://www.instagram.com" target="_blank" rel="noopener" color="inherit">

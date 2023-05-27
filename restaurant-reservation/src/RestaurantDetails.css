@@ -1,0 +1,74 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Set a consistent font for the entire app */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Style the header elements */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Style the container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Style the CardMedia component */
+.card-media {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Style the address and phone Grid items */
+.grid-item {
+  margin-bottom: 20px;
+}
+
+/* Style the Paper components */
+.paper {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the menu table */
+.table-container {
+  margin-bottom: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table header */
+.table-head {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style the Book Table button */
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+}

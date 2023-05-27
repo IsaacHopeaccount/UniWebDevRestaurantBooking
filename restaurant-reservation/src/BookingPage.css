@@ -1,18 +1,35 @@
 .booking-page {
+    /* Set the minimum height to cover the full viewport height. */
     min-height: 100vh;
+
+    /* Use a subtle background image. */
     background-image: url('https://images.unsplash.com/photo-1634234498573-29224acf2907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-size: 50%;
+
+    /* Cover the full available space with the background image, and align it at the center bottom. */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center bottom;
+
+    /* Set up a flex container to center the booking form. */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 5rem;
-  }
-  
-  .booking-container {
+
+    /* Added a gradient overlay to the background for better text readability */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.booking-container {
+    /* Use a semi-transparent background color for the form container, and give it some padding and rounded corners. */
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 10px;
-  }
-  
+
+    /* Added a subtle box-shadow for a more "lifted" effect. */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* Limit the width of the form for larger screens for better readability. */
+    max-width: 600px;
+}

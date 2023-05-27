@@ -2,15 +2,20 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import restaurants from './restaurants.json';
 import Rating from './Rating';
+import './RestaurantDetails.css';
 
 import { Container, Typography, Box, Paper, Grid, CardMedia, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 
 function RestaurantDetails() {
+  // Retrieve the id from the URL parameters
   const { id } = useParams();
+  
+  // Find the restaurant in the array using the id
   const restaurant = restaurants.find((r) => r.id === parseInt(id));
 
   console.log('Restaurant:', restaurant);
 
+  // If the restaurant does not exist, display a message
   if (!restaurant) {
     return (
       <Container>
@@ -21,6 +26,7 @@ function RestaurantDetails() {
     );
   }
 
+  // If the restaurant does exist, display its details
   return (
     <Container>
       <Box my={4}>
@@ -46,39 +52,43 @@ function RestaurantDetails() {
             </Paper>
           </Grid>
         </Grid>
+
         <Box my={4}>
           <CardMedia
             component="img"
             height="300"
             image={restaurant.image}
             alt={restaurant.name}
+            className="card-media"
           />
         </Box>
+
         <Box my={4}>
-        <Typography variant="h5" component="h2" gutterBottom>
-          Menu
-        </Typography>
-        <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell align="right">Price</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {restaurant.menu.map((item) => (
-                <TableRow key={item.id}>
-                  <TableCell component="th" scope="row">
-                    {item.name}
-                  </TableCell>
-                  <TableCell align="right">${item.price}</TableCell>
+          <Typography variant="h5" component="h2" gutterBottom>
+            Menu
+          </Typography>
+          <TableContainer component={Paper}>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Name</TableCell>
+                  <TableCell align="right">Price</TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Box>
+              </TableHead>
+              <TableBody>
+                {restaurant.menu.map((item) => (
+                  <TableRow key={item.id}>
+                    <TableCell component="th" scope="row">
+                      {item.name}
+                    </TableCell>
+                    <TableCell align="right">${item.price}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Box>
+
         <Box my={2}>
           <Link to={`/booking/${restaurant.id}`} style={{ textDecoration: 'none' }}>
             <Button variant="contained" color="primary">

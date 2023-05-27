@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Example Italian",
+    "name": "Bella Italia",
     "description": "An italian restaurant with a great view of the city",
     "rating": 5,
     "address": "Bond Street, Liverpool",
@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "name": "Example Chinese",
+    "name": "Dragon Palace China",
     "description": "A traditional Chinese restaurant for the whole family to enjoy",
     "rating": 4.5,
     "address": "Bond Street, Liverpool",
@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "name": "Example American Diner",
+    "name": " Stars and Stripes Diner",
     "description": "A classic American diner with a twist",
     "rating": 3.7,
     "address": "Bond Street, Liverpool",
